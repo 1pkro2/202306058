@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Noto Snas KR';
+    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap);
+}
+
+*{
+    margin:0;
+    list-style: none;
+    font-size: 0;
+    font-family: 'Noto Sans KR';
+  }
+
+
+nav{
+    height: 93px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 8px;
+}
+nav ul{
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li:after{
+  display:block;
+  content: '';
+  border-bottom: solid 4px #dbc501;
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
+}
+li:hover:after {transform: scaleX(1);}
+
+nav ul li a{
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-family: "din-condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: white;
+    text-decoration: none;
+}
+
+.box1{
+  position: relative;
+  text-align: center;
+  background-color: black;
+  background-size: 100vw;
+}
+
+.box1 h1{position: absolute;
+    text-align: center;
+    left: 50%; transform:
+    translateX(-50%);
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 33px;}
+
+.box1 h2{position: absolute;
+    text-align: center;
+     left: 50%; transform:
+   translateX(-50%);
+    margin-top: 140px;
+   color: white;
+   font-size: 26px;
+   Font-weight: 100
+  }
+
+.box1 h3{position: absolute;
+    text-align: center;
+     left: 50%; transform:
+   translateX(-50%);
+    margin-top: 900px;
+   color: white;
+   font-size: 18px;
+   Font-weight: 100
+  }
